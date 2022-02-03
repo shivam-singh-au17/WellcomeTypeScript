@@ -148,3 +148,38 @@ value = "Shivam Ji";
 console.log("value:", value);
 value = true;
 console.log("value:", value);
+
+// Interface in TypeScript
+
+/*
+Syntax:
+  interface interfaceName 
+    {
+      property_Type : dataType;
+      property_Type : dataType;
+      property_Type : dataType;
+    }
+*/
+
+interface objUserDataTypes {
+  name: string;
+  age: number;
+  isMale: boolean;
+  address: any;
+  printName: () => string;
+}
+
+//  defind data types for object
+
+let objUser: objUserDataTypes = {
+  name: "string",
+  age: 20,
+  isMale: true,
+  address: "MZP",
+  printName: function () {
+    return "My Function";
+  },
+};
+
+console.log(objUser);
+console.log(objUser.printName());

@@ -114,3 +114,15 @@ value = "Shivam Ji";
 console.log("value:", value);
 value = true;
 console.log("value:", value);
+//  defind data types for object
+var objUser = {
+    name: "string",
+    age: 20,
+    isMale: true,
+    address: "MZP",
+    printName: function () {
+        return "My Function";
+    }
+};
+console.log(objUser);
+console.log(objUser.printName());

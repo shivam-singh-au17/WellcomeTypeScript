@@ -22,3 +22,17 @@ class App {
 
 let fun = new App();
 fun.test();
+
+// Types in TypeScript
+
+let num1: number = 10;
+console.log(num1);
+
+var num2: number = 10.1;
+console.log(num2);
+
+let str1: string = "Shivam";
+console.log(str1);
+
+const isFine: boolean = true;
+console.log(isFine);

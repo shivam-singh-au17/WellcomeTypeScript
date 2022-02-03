@@ -20,3 +20,12 @@ var App = /** @class */ (function () {
 }());
 var fun = new App();
 fun.test();
+// Types in TypeScript
+var num1 = 10;
+console.log(num1);
+var num2 = 10.1;
+console.log(num2);
+var str1 = "Shivam";
+console.log(str1);
+var isFine = true;
+console.log(isFine);

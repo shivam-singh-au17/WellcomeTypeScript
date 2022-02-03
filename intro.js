@@ -112,3 +112,5 @@ var value = 10;
 console.log("value:", value);
 value = "Shivam Ji";
 console.log("value:", value);
+value = true;
+console.log("value:", value);

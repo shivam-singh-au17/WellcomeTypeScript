@@ -142,7 +142,9 @@ console.log(isMale);
 
 // other wise if we know the data types of that variable so we can use UNION like below
 
-let value: string | number = 10;
+let value: string | number | boolean = 10;
 console.log("value:", value);
 value = "Shivam Ji";
+console.log("value:", value);
+value = true;
 console.log("value:", value);

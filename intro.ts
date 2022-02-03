@@ -7,8 +7,7 @@ export {};
     tsc <file name> --watch for countinu watching files
 */
 
-    
-// Intro of typescript
+// Intro of typescript and run First Code
 
 let str = "Shivam Singh";
 console.log("str:", str);
@@ -65,4 +64,64 @@ console.log(mixTypeArr);
 
 let boolDataType: boolean[] = [true, false];
 console.log("boolDataType:", boolDataType);
+
+// Typed Object in TypeScript
+
+/*
+default typed object
+update property
+add new proprty
+define a custom type for object
+use ANY with object
+*/
+
+const user = {
+  name: "shivam", // default data type for name is STRING
+  age: 24, // default data type for age is Number
+  isMale: true, // default data type for isMale is BOOLEAN
+};
+user.name = "Singh";
+/*
+user.name = 100  // its throw error because default data type for name is STRING
+*/
+console.log(user);
+
+interface profileDataTypes {
+  name: string;
+  age: number;
+  isMale: boolean;
+  address: any;
+}
+
+//  defind data types for object
+
+let profile: profileDataTypes = {
+  name: "string",
+  age: 23,
+  isMale: true,
+  address: "MZP",
+};
+
+console.log(profile);
+profile.address = 100; // it will not throww error because we use ANY  it meins we can use any data types
+console.log(profile);
+profile.address = false; // it will not throww error because we use ANY  it meins we can use any data types
+console.log(profile);
+
+
+//  with any key word we can update any key ka value in object
+
+const anyUser:any = {
+  name: "shivam", // default data type for name is any Data Type
+  age: 24, // default data type for age is any Data Type
+  isMale: true, // default data type for isMale is any Data Type
+};
+
+anyUser.name = "King"
+anyUser.name = 1000
+anyUser.name = true
+anyUser.age = "King";
+anyUser.age = 1000;
+anyUser.age = true;
+console.log(anyUser);
 

@@ -96,3 +96,19 @@ anyUser.age = "King";
 anyUser.age = 1000;
 anyUser.age = true;
 console.log(anyUser);
+//  Union Data Types in TyeScript
+var name = "shivam";
+/*
+name = 30  // it throww error because data type for name in string
+*/
+// if we want to use any data type for any variable so we can use ANY keyWord like below
+var isMale = true;
+isMale = 30;
+isMale = "No";
+isMale = false;
+console.log(isMale);
+// other wise if we know the data types of that variable so we can use UNION like below
+var value = 10;
+console.log("value:", value);
+value = "Shivam Ji";
+console.log("value:", value);

@@ -250,20 +250,18 @@ class MyApp2 {
 let showMsg2 = new MyApp2();
 showMsg2.wellcomeMsg();
 
-
-
 class MyApp3 {
   name;
-  age:number = 24;
+  age: number = 24;
   msg = "Wellcome3";
-  constructor(nameValue:string) {
+  constructor(nameValue: string) {
     this.name = nameValue;
   }
-  wellcomeMsg():void {
+  wellcomeMsg(): void {
     console.log(this.msg, this.name);
   }
-  showAge():number {
-    return this.age
+  showAge(): number {
+    return this.age;
   }
 }
 
@@ -271,4 +269,26 @@ let showMsg3 = new MyApp3("Saurabh Singh");
 showMsg3.wellcomeMsg();
 console.log(showMsg3.showAge());
 
+//  Inheritance in TypeScript
 
+/*
+what is inheriitance
+make a parent class
+make a child class
+*/
+
+class Parent {
+  name: string;
+  setName(name): void {
+    this.name = name;
+  }
+}
+class Child extends Parent {
+  getName(): string {
+    return this.name;
+  }
+}
+
+let printName = new Child();
+printName.setName("Sonam Singh");
+console.log(printName.getName());

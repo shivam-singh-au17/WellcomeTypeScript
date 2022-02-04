@@ -126,3 +126,23 @@ var objUser = {
 };
 console.log(objUser);
 console.log(objUser.printName());
+// Function in TypeScript
+/*
+Define a normal function
+Define function type
+Add params in function
+Define params type
+Optional params with type
+*/
+function func() {
+    return 10 + 10;
+}
+console.log(func());
+function func2(a) {
+    return a;
+}
+console.log(func2(100));
+function func3(a, b) {
+    return b ? a + b : a;
+}
+console.log(func3(100, 50));

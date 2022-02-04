@@ -146,3 +146,56 @@ function func3(a, b) {
     return b ? a + b : a;
 }
 console.log(func3(100, 50));
+//  Class in TypeScrippt
+/*
+Define a Class
+Create a object for class
+Make property
+Make function
+Define data type of functin and property
+define data type to params
+*/
+var MyApp1 = /** @class */ (function () {
+    function MyApp1() {
+        this.name = "Shivam Singh";
+        this.age = 24;
+        this.msg = "Wellcome";
+    }
+    MyApp1.prototype.wellcomeMsg = function () {
+        console.log(this.msg, this.name);
+    };
+    return MyApp1;
+}());
+var showMsg = new MyApp1();
+showMsg.wellcomeMsg();
+var MyApp2 = /** @class */ (function () {
+    function MyApp2() {
+        this.name = "Shivam Singh 2";
+        this.age = 24;
+        this.msg = "Wellcome 2";
+        console.log("My Name");
+    }
+    MyApp2.prototype.wellcomeMsg = function () {
+        console.log(this.msg, this.name);
+    };
+    return MyApp2;
+}());
+var showMsg2 = new MyApp2();
+showMsg2.wellcomeMsg();
+var MyApp3 = /** @class */ (function () {
+    function MyApp3(nameValue) {
+        this.age = 24;
+        this.msg = "Wellcome3";
+        this.name = nameValue;
+    }
+    MyApp3.prototype.wellcomeMsg = function () {
+        console.log(this.msg, this.name);
+    };
+    MyApp3.prototype.showAge = function () {
+        return this.age;
+    };
+    return MyApp3;
+}());
+var showMsg3 = new MyApp3("Saurabh Singh");
+showMsg3.wellcomeMsg();
+console.log(showMsg3.showAge());

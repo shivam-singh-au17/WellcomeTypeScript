@@ -212,3 +212,63 @@ function func3(a: number, b?: number): number {
 
 console.log(func3(100, 50));
 
+//  Class in TypeScrippt
+
+/*
+Define a Class
+Create a object for class
+Make property
+Make function
+Define data type of functin and property
+define data type to params
+*/
+
+class MyApp1 {
+  name = "Shivam Singh";
+  age = 24;
+  msg = "Wellcome";
+  wellcomeMsg() {
+    console.log(this.msg, this.name);
+  }
+}
+
+let showMsg = new MyApp1();
+showMsg.wellcomeMsg();
+
+class MyApp2 {
+  name = "Shivam Singh 2";
+  age = 24;
+  msg = "Wellcome 2";
+  constructor() {
+    console.log("My Name");
+  }
+  wellcomeMsg() {
+    console.log(this.msg, this.name);
+  }
+}
+
+let showMsg2 = new MyApp2();
+showMsg2.wellcomeMsg();
+
+
+
+class MyApp3 {
+  name;
+  age:number = 24;
+  msg = "Wellcome3";
+  constructor(nameValue:string) {
+    this.name = nameValue;
+  }
+  wellcomeMsg():void {
+    console.log(this.msg, this.name);
+  }
+  showAge():number {
+    return this.age
+  }
+}
+
+let showMsg3 = new MyApp3("Saurabh Singh");
+showMsg3.wellcomeMsg();
+console.log(showMsg3.showAge());
+
+

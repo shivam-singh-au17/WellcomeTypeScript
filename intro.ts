@@ -292,3 +292,56 @@ class Child extends Parent {
 let printName = new Child();
 printName.setName("Sonam Singh");
 console.log(printName.getName());
+
+//  Enum in TypeScript
+
+enum Days {
+  mon,
+  tue,
+  wed,
+  fri,
+  sat,
+  sun,
+}
+
+let whichDay: Days;
+
+// whichDay = "test"; // throe error
+
+whichDay = Days.fri;
+console.log(whichDay);
+whichDay = Days.sun;
+console.log(whichDay);
+whichDay = Days.tue;
+console.log(whichDay);
+
+enum DaysTwo {
+  mon = "Monday",
+  tue = "Thuesday",
+}
+
+let whichDayTwo: DaysTwo;
+
+whichDayTwo = DaysTwo.mon;
+console.log(whichDayTwo);
+console.log(whichDayTwo === "Monday");
+whichDayTwo = DaysTwo.tue;
+console.log(whichDayTwo);
+console.log(whichDayTwo === "Thuesday");
+
+enum Value {
+  a = 22,
+  b = 44,
+  c = 66,
+  d = 88,
+  e,
+  f,
+}
+
+function printValue(data: Value) {
+  return data;
+}
+
+console.log(Value.a);
+console.log(Value.c);
+console.log(Value.f);

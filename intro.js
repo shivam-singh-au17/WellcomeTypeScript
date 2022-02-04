@@ -241,3 +241,48 @@ var Child = /** @class */ (function (_super) {
 var printName = new Child();
 printName.setName("Sonam Singh");
 console.log(printName.getName());
+//  Enum in TypeScript
+var Days;
+(function (Days) {
+    Days[Days["mon"] = 0] = "mon";
+    Days[Days["tue"] = 1] = "tue";
+    Days[Days["wed"] = 2] = "wed";
+    Days[Days["fri"] = 3] = "fri";
+    Days[Days["sat"] = 4] = "sat";
+    Days[Days["sun"] = 5] = "sun";
+})(Days || (Days = {}));
+var whichDay;
+// whichDay = "test"; // throe error
+whichDay = Days.fri;
+console.log(whichDay);
+whichDay = Days.sun;
+console.log(whichDay);
+whichDay = Days.tue;
+console.log(whichDay);
+var DaysTwo;
+(function (DaysTwo) {
+    DaysTwo["mon"] = "Monday";
+    DaysTwo["tue"] = "Thuesday";
+})(DaysTwo || (DaysTwo = {}));
+var whichDayTwo;
+whichDayTwo = DaysTwo.mon;
+console.log(whichDayTwo);
+console.log(whichDayTwo === "Monday");
+whichDayTwo = DaysTwo.tue;
+console.log(whichDayTwo);
+console.log(whichDayTwo === "Thuesday");
+var Value;
+(function (Value) {
+    Value[Value["a"] = 22] = "a";
+    Value[Value["b"] = 44] = "b";
+    Value[Value["c"] = 66] = "c";
+    Value[Value["d"] = 88] = "d";
+    Value[Value["e"] = 89] = "e";
+    Value[Value["f"] = 90] = "f";
+})(Value || (Value = {}));
+function printValue(data) {
+    return data;
+}
+console.log(Value.a);
+console.log(Value.c);
+console.log(Value.f);

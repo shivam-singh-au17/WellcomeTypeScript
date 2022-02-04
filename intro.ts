@@ -345,3 +345,32 @@ function printValue(data: Value) {
 console.log(Value.a);
 console.log(Value.c);
 console.log(Value.f);
+
+//  Symbol in TypeScript
+
+/*
+
+
+let mySymbol1 = Symbol("1")
+let mySymbol2 = Symbol("2")
+console.log('mySymbol:', mySymbol1 == mySymbol2)
+console.log('mySymbol:', mySymbol1 === mySymbol2)
+
+let data = {
+  [mySymbol1] : "Mr. Shivam Siingh"
+}
+
+console.warn(data[mySymbol1]);
+
+let funcDemo = Symbol("3";
+class Demo {
+  [funcDemo]() {
+    return "My Demo"
+  }
+}
+
+let shoeDemo = new Demo();
+console.log(shoeDemo[funcDemo]());
+
+
+*/
